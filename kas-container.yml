@@ -1,0 +1,21 @@
+header:
+  version: 10
+
+  includes:
+    - kas-hass.yml
+
+repos:
+  poky:
+    layers:
+      meta-yocto-bsp:
+
+machine: genericx86-64
+distro: homeassistant
+target: container-homeassistant
+
+local_conf_header:
+  container: |
+    PREFERRED_PROVIDER_virtual/kernel = "linux-dummy"
+    IMAGE_FSTYPES = "container"
+    IMAGE_FEATURES = ""
+    IMAGE_BUILDINFO_FILE = ""

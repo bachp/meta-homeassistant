@@ -9,19 +9,23 @@ repos:
 
   poky:
     url: https://git.yoctoproject.org/git/poky
-    refspec: master
     layers:
       meta:
       meta-poky:
 
   meta-openembedded:
     url: http://git.openembedded.org/meta-openembedded
-    refspec: master
     layers:
       meta-oe:
       meta-python:
       meta-networking:
       meta-perl:
+
+  meta-security:
+    url: https://git.yoctoproject.org/git/meta-security
+
+  meta-python-dunfellplus:
+    url: https://git.ostc-eu.org/OSTC/OHOS/meta-python-dunfellplus.git
 
 local_conf_header:
   reduce_diskspace: |

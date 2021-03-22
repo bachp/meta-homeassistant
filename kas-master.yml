@@ -4,6 +4,9 @@ header:
 repos:
   poky:
     refspec: master
-
   meta-openembedded:
+    refspec: master
+  meta-security:
+    refspec: master
+  meta-python-masterplus:
     refspec: master

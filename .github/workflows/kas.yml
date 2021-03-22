@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        yocto-version: [gatesgarth]
-        machine: [qemu]
+        yocto-version: [dunfell]
+        machine: [container]
     steps:
     - name: Install dependencies
       run: |

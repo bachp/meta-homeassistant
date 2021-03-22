@@ -5,7 +5,7 @@ header:
     - kas-hass.yml
 
 machine: raspberrypi3
-distro: poky
+distro: homeassistant
 target: core-image-homeassistant
 
 repos:
@@ -28,7 +28,7 @@ local_conf_header:
     LICENSE_FLAGS_WHITELIST = "commercial"
     IMAGE_INSTALL_append = " kernel-image kernel-modules"
 
-  standard: |  
+  standard: |
     PATCHRESOLVE = "noop"
     CONF_VERSION = "1"
     PACKAGE_CLASSES ?= "package_ipk"

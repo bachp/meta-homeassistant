@@ -5,5 +5,5 @@ header:
     - kas-hass.yml
 
 machine: qemuarm64
-distro: poky
+distro: homeassistant
 target: core-image-homeassistant

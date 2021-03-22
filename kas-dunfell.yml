@@ -1,0 +1,12 @@
+header:
+  version: 10
+
+repos:
+  poky:
+    refspec: dunfell
+  meta-openembedded:
+    refspec: dunfell
+  meta-security:
+    refspec: dunfell
+  meta-python-dunfellplus:
+    refspec: dunfell
